@@ -1,0 +1,37 @@
+<%- include ('partials/header.ejs') %>
+    <h3 class="bbb_viewed_title">Produtos</h3>
+    <div class="div-products">
+    <% produtos.forEach(produtos => { %>
+        <div class="card br-5" style="width: 18rem; display: flex; align-items: center;">
+            <img class="card-img-top" style="width: 50%; height: 75%;" src="/imgs/<%= produtos.foto %>" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-text"><%= produtos.produto %></h4>
+                <h5 class=""><%= produtos.preco.toLocaleString("pt-br", {style: "currency", currency: "BRL"})%></h5>
+            </div>
+        </div>
+    <% }) %> 
+    </div>
+    <div class="div-products">
+    <% produtos.forEach(produtos => { %>
+        <div class="card br-5" style="width: 18rem; display: flex; align-items: center;">
+            <img class="card-img-top" style="width: 50%; height: 75%;" src="/imgs/<%= produtos.foto %>" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-text"><%= produtos.produto %></h4>
+                <h5 class=""><%= produtos.preco.toLocaleString("pt-br", {style: "currency", currency: "BRL"})%></h5>
+            </div>
+        </div>
+    <% }) %> 
+    </div>
+    <div class="div-products">
+    <% produtos.forEach(produtos => { %>
+        <div class="card br-5" style="width: 18rem; display: flex; align-items: center;">
+            <img class="card-img-top" style="width: 50%; height: 75%;" src="/imgs/<%= produtos.foto %>" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-text"><%= produtos.produto %></h4>
+                <h5 class=""><%= produtos.preco.toLocaleString("pt-br", {style: "currency", currency: "BRL"})%></h5>
+            </div>
+        </div>
+    <% }) %> 
+    </div>
+
+<%- include ('partials/footer.ejs') %>
