@@ -7,6 +7,7 @@ router.get("/pedido", (req, res) => {
         { numero: 2, produto: "McPherson", preco: 24 },
         { numero: 3, produto: "Honeyhart", preco: 30 },
         { numero: 4, produto: "Pink Mammoth", preco: 25 },
+        { numero: 5, produto: "Fino de Jete", preco: 50 },
     ];
     res.render("pedido", {
         pedido: pedido
